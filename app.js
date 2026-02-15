@@ -32,13 +32,48 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("mouseleave", reset);
   }
 });
-// Experience accordions
-document.querySelectorAll("[data-acc]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const panel = btn.parentElement.querySelector(".panel");
-    const open = panel.classList.toggle("open");
-    panel.style.maxHeight = open ? panel.scrollHeight + "px" : "0px";
-    const chev = btn.querySelector("[data-chev]");
-    if (chev) chev.textContent = open ? "–" : "+";
+
+// Experience accordion (rebuild) - single-open
+(() => {
+  const items = Array.from(document.querySelectorAll('[data-exp]'));
+  if (!items.length) return;
+
+  function closeItem(it){
+    const btn = it.querySelector('.exp-head');
+    const panel = it.querySelector('.exp-panel');
+    const icon = it.querySelector('.exp-icon');
+    it.classList.remove('open');
+    btn?.setAttribute('aria-expanded','false');
+    if (panel) panel.style.maxHeight = '0px';
+    if (icon) icon.textContent = '+';
+  }
+
+  function openItem(it){
+    const btn = it.querySelector('.exp-head');
+    const panel = it.querySelector('.exp-panel');
+    const icon = it.querySelector('.exp-icon');
+    it.classList.add('open');
+    btn?.setAttribute('aria-expanded','true');
+    if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+    if (icon) icon.textContent = '–';
+  }
+
+  items.forEach(it => {
+    const btn = it.querySelector('.exp-head');
+    const panel = it.querySelector('.exp-panel');
+    if (panel) panel.style.maxHeight = '0px';
+    btn?.addEventListener('click', () => {
+      const isOpen = it.classList.contains('open');
+      items.forEach(closeItem);
+      if (!isOpen) openItem(it);
+    });
   });
-});
+
+  // Recompute on resize for opened item
+  window.addEventListener('resize', () => {
+    const open = items.find(i => i.classList.contains('open'));
+    if (!open) return;
+    const panel = open.querySelector('.exp-panel');
+    if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+  });
+})();

@@ -612,69 +612,68 @@ footer{
 }
 
 
-/* === Experience dropdown (timeline accordion) === */
-.timeline{display:grid; gap:12px}
-.item{
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.08);
-  box-shadow: var(--shadow2);
-  overflow:hidden;
-}
-.item button{
+/* === Experience (rebuild): isolated, vertical accordion === */
+.exp-acc{display:flex; flex-direction:column; gap:14px; margin-top:16px}
+.exp-item{padding:0}
+.exp-head{
   width:100%;
-  text-align:left;
-  border:none;
+  border:0;
   background:transparent;
   color:inherit;
-  padding: 16px 16px;
   cursor:pointer;
   display:flex;
-  justify-content:space-between;
-  gap: 12px;
   align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  padding:18px 18px;
 }
-.item button:hover{background: rgba(255,255,255,.04)}
-.acc-left{display:flex; flex-direction:column; gap:8px}
-.roleline{display:flex; gap:12px; align-items:center}
-.logo{
-  width:34px; height:34px;
-  border-radius: 12px;
+.exp-left{display:flex; gap:14px; align-items:flex-start}
+.exp-logo{
+  width:44px; height:44px;
+  border-radius:14px;
   border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.08);
-  object-fit: contain;
-  padding: 6px;
+  background: rgba(255,255,255,.06);
+  object-fit:contain;
+  padding:8px;
+  flex:0 0 auto;
 }
-.role{font-weight:950; letter-spacing:-.15px}
-.meta{
-  color: rgba(244,247,255,.70);
-  font-weight:700;
-  font-size: 13px;
-  margin-top:2px;
-}
-.badge{
+.exp-title .company{font-weight:950; letter-spacing:-.25px}
+.exp-title .meta{margin-top:3px}
+.tag-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.tag{
   display:inline-flex;
   align-items:center;
-  padding: 7px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.08);
-  font-size: 12px;
+  font-size:12px;
   font-weight:950;
-  width: fit-content;
+  width:fit-content;
 }
-.chev{font-weight:950; opacity:.85; margin-top:2px}
-.panel{
+.exp-icon{
+  font-weight:950;
+  opacity:.9;
+  padding:6px 10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  line-height:1;
+  margin-top:2px;
+}
+.exp-panel{
   max-height:0;
   overflow:hidden;
-  transition: max-height .35s ease;
-  border-top: 1px solid rgba(255,255,255,.10);
+  transition:max-height .38s ease;
+  border-top:1px solid rgba(255,255,255,.10);
 }
-.panel .inner{padding: 14px 16px 16px}
+.exp-inner{padding:14px 18px 18px}
+.bul{margin:0; padding-left:18px; display:flex; flex-direction:column; gap:8px}
+#experience .sub{margin-top:12px}
 
+/* Mobile */
 @media (max-width: 720px){
-  .roleline{align-items:flex-start}
-  .logo{width:32px;height:32px;border-radius:12px}
-  .item button{padding: 14px 14px}
-  .panel .inner{padding: 12px 14px 14px}
+  .exp-head{padding:16px}
+  .exp-inner{padding:12px 16px 16px}
+  .exp-logo{width:40px;height:40px;border-radius:14px;padding:7px}
 }
