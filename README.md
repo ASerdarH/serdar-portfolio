@@ -1,8 +1,8 @@
-# Wow-style CV (single page)
+# Cinematic CV v2
 
-Upload:
+Upload to GitHub repo root:
 - index.html
-- assets/ (styles.css, app.js, headshot.jpg)
+- assets/
 
-GitHub Pages:
-Settings -> Pages -> Deploy from branch -> main / (root)
+Then enable GitHub Pages (Deploy from branch / root).
+Hard refresh after upload (Cmd+Shift+R).
