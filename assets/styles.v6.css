@@ -585,3 +585,45 @@ footer{
 @media (hover: none){
   #experience .glass:hover{ transform:none; box-shadow: var(--shadow2); filter:none; }
 }
+
+
+/* === Mobile structure pass === */
+@media (max-width: 720px){
+  .wrap{width: min(1040px, 92vw);}
+  .section{padding: 44px 0;}
+  .h1{font-size: 46px; line-height: 1.02;}
+  .lead{font-size: 16px;}
+  .topbar{padding: 14px 0;}
+  .nav{gap: 10px; flex-wrap: wrap; justify-content: flex-start;}
+  .nav a{padding: 10px 12px; font-size: 13px;}
+  .brand{gap: 10px;}
+  .brand .title{font-size: 14px;}
+  .brand .sub{font-size: 12px;}
+
+  .hero{padding-top: 22px;}
+  .hero-grid{grid-template-columns: 1fr; gap: 18px;}
+  .photoStage{width: 100%; margin-left: 0;}
+  .photoCard{padding: 14px;}
+  .photoFrame{border-radius: 18px;}
+  .photoFrame img{border-radius: 14px;}
+
+  /* Cards stack + breathe */
+  .grid2{grid-template-columns: 1fr; gap: 16px;}
+  .glass{padding: 18px; border-radius: 18px;}
+  .metrics-row{flex-wrap: wrap; gap: 10px;}
+  .metric-bubble{min-width: 140px; flex: 1 1 140px;}
+
+  /* Experience: always full width, readable */
+  #experience .glass{padding: 20px;}
+  #experience .glass:hover{transform: none; box-shadow: var(--shadow2);}
+
+  /* Wins list */
+  .wins{grid-template-columns: 1fr; gap: 12px;}
+  .win{padding: 16px; border-radius: 18px;}
+}
+
+@media (max-width: 420px){
+  .h1{font-size: 40px;}
+  .nav a{width: 100%; text-align: left;}
+  .btn{width: 100%; justify-content: center;}
+}
