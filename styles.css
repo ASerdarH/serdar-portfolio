@@ -497,15 +497,18 @@ footer{
 .ext{opacity:.6;font-weight:900;margin-left:4px}
 
 
-/* Force Experience section to stack vertically */
-#experience .grid2,
-#experience .grid,
-#experience .wrap > .grid2{
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 24px !important;
+/* Force Experience cards to stack vertically (fix) */
+#experience .wrap{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
 }
-
-#experience .glass{
-  width: 100% !important;
+#experience .wrap > .h2{
+  width:100%;
+}
+#experience .wrap > .glass{
+  width:100% !important;
+}
+#experience .grid2{
+  grid-template-columns: 1fr !important;
 }
