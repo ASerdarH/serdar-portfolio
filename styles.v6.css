@@ -522,3 +522,21 @@ footer{
 #experience .wrap > *{
   break-inside: avoid !important;
 }
+
+
+/* Significant grow effect on hover */
+#experience .glass{
+  transition: transform 0.35s ease, box-shadow 0.35s ease, z-index 0.2s ease;
+  position: relative;
+}
+
+#experience .glass:hover{
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+}
+
+/* Prevent layout breaking when scaling */
+#experience .wrap{
+  overflow: visible !important;
+}
