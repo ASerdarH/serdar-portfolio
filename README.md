@@ -1,10 +1,10 @@
-# Apple-ish Recruiter-Friendly CV Site (GitHub Pages)
+# Storyfolio-like CV Site (Apple-ish light)
 
-## Publish
-Upload all files to your repo, then:
+## Deploy on GitHub Pages
+Upload `index.html` and the `assets/` folder to your repo root.
 Repo → Settings → Pages → Deploy from branch → main / (root)
 
-## Notes
-- Multi-page with smooth transitions (Home / Experience / Results / Contact)
-- Print-to-PDF supported (browser Print → Save as PDF)
-- Headshot included in /assets
+## Interactions
+- Experience carousel (Prev/Next)
+- Double-click any experience card OR click “More info” to open details modal
+- Smooth scroll reveal animations
