@@ -567,23 +567,6 @@ footer{
 }
 
 
-/* === Experience: BIG hover expansion (cinematic) === */
-#experience .wrap{ overflow: visible; }
-#experience .glass{
-  position: relative;
-  transform-origin: center;
-  transition: transform .32s cubic-bezier(.2,.8,.2,1), box-shadow .32s cubic-bezier(.2,.8,.2,1), filter .32s;
-  will-change: transform;
-}
-#experience .glass:hover{
-  transform: scale(1.15);
-  z-index: 50;
-  box-shadow: 0 40px 120px rgba(0,0,0,.55);
-  filter: saturate(1.05);
-}
-/* Keep hover usable on touch devices */
-@media (hover: none){
-  #experience .glass:hover{ transform:none; box-shadow: var(--shadow2); filter:none; }
 }
 
 
@@ -626,4 +609,72 @@ footer{
   .h1{font-size: 40px;}
   .nav a{width: 100%; text-align: left;}
   .btn{width: 100%; justify-content: center;}
+}
+
+
+/* === Experience dropdown (timeline accordion) === */
+.timeline{display:grid; gap:12px}
+.item{
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.08);
+  box-shadow: var(--shadow2);
+  overflow:hidden;
+}
+.item button{
+  width:100%;
+  text-align:left;
+  border:none;
+  background:transparent;
+  color:inherit;
+  padding: 16px 16px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  gap: 12px;
+  align-items:flex-start;
+}
+.item button:hover{background: rgba(255,255,255,.04)}
+.acc-left{display:flex; flex-direction:column; gap:8px}
+.roleline{display:flex; gap:12px; align-items:center}
+.logo{
+  width:34px; height:34px;
+  border-radius: 12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.08);
+  object-fit: contain;
+  padding: 6px;
+}
+.role{font-weight:950; letter-spacing:-.15px}
+.meta{
+  color: rgba(244,247,255,.70);
+  font-weight:700;
+  font-size: 13px;
+  margin-top:2px;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.08);
+  font-size: 12px;
+  font-weight:950;
+  width: fit-content;
+}
+.chev{font-weight:950; opacity:.85; margin-top:2px}
+.panel{
+  max-height:0;
+  overflow:hidden;
+  transition: max-height .35s ease;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+.panel .inner{padding: 14px 16px 16px}
+
+@media (max-width: 720px){
+  .roleline{align-items:flex-start}
+  .logo{width:32px;height:32px;border-radius:12px}
+  .item button{padding: 14px 14px}
+  .panel .inner{padding: 12px 14px 14px}
 }

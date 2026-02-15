@@ -32,3 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("mouseleave", reset);
   }
 });
+// Experience accordions
+document.querySelectorAll("[data-acc]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const panel = btn.parentElement.querySelector(".panel");
+    const open = panel.classList.toggle("open");
+    panel.style.maxHeight = open ? panel.scrollHeight + "px" : "0px";
+    const chev = btn.querySelector("[data-chev]");
+    if (chev) chev.textContent = open ? "–" : "+";
+  });
+});
