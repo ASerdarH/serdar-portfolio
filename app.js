@@ -32,10 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("mouseleave", reset);
   }
 });
-  // Inline expand cards
-  document.querySelectorAll('.expandable').forEach(card => {
-    card.addEventListener('click', (e) => {
-      if (e.target.closest('a, button')) return;
-      card.classList.toggle('expanded');
-    });
-  });

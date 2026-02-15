@@ -117,7 +117,7 @@ a.link:hover{border-bottom-color: rgba(199,210,254,.75)}
 /* Layout */
 main{padding-top: 70px;}
 .section{
-  min-height: 88vh;
+  min-height: auto;
   display:flex;
   align-items:center;
   padding: 44px 0;
