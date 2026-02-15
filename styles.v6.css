@@ -540,3 +540,34 @@ footer{
 #experience .wrap{
   overflow: visible !important;
 }
+
+/* Contact full width after removing download */
+#contact .wrap{
+  display: flex;
+  flex-direction: column;
+}
+#contact .glass{
+  width: 100%;
+}
+
+/* Accordion behavior */
+#experience .glass{
+  cursor: pointer;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+#experience .exp-body{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+#experience .glass.open .exp-body{
+  max-height: 2000px;
+}
+
+#experience .glass.open{
+  transform: scale(1.03);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
