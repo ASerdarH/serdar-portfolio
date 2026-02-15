@@ -3,681 +3,133 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Serdar Hicyilmaz | Account Executive (UK) | Sendcloud</title>
-  <meta name="description" content="Serdar Hicyilmaz — Account Executive focused on the UK market. SaaS sales across e-commerce automation, workflow automation, and logistics." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Serdar Hicyilmaz | Account Executive" />
-  <meta property="og:description" content="SaaS Account Executive (UK market) — e-commerce automation & logistics." />
-  <meta property="og:type" content="website" />
-
+  <title>Serdar Hicyilmaz | Account Executive (UK)</title>
+  <meta name="description" content="Serdar Hicyilmaz — Account Executive (UK Market). SaaS sales across e-commerce shipping automation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#0b1220;
-      --bg2:#0f172a;
-      --card:rgba(255,255,255,.06);
-      --card2:rgba(255,255,255,.09);
-      --stroke:rgba(148,163,184,.25);
-      --text:#e2e8f0;
-      --muted:#94a3b8;
-      --brand:#38bdf8;
-      --brand2:#a78bfa;
-      --ok:#34d399;
-      --warn:#fbbf24;
-      --shadow: 0 20px 50px rgba(0,0,0,.35);
-      --radius: 18px;
-      --radius2: 26px;
-      --max: 980px;
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(56,189,248,.25), transparent 60%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(167,139,250,.18), transparent 55%),
-                  radial-gradient(800px 450px at 30% 110%, rgba(52,211,153,.12), transparent 50%),
-                  linear-gradient(180deg, var(--bg), var(--bg2));
-      color:var(--text);
-      line-height:1.55;
-      overflow-x:hidden;
-    }
-
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-
-    /* Subtle animated background grain */
-    .grain{
-      pointer-events:none;
-      position:fixed; inset:-200px;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
-      mix-blend-mode:overlay;
-      opacity:.35;
-      transform:translate3d(0,0,0);
-      animation: grain 12s steps(10) infinite;
-    }
-    @keyframes grain{
-      0%,100%{transform:translate(0,0)}
-      10%{transform:translate(-5%,-10%)}
-      20%{transform:translate(-15%,5%)}
-      30%{transform:translate(7%,-25%)}
-      40%{transform:translate(-5%,25%)}
-      50%{transform:translate(-15%,10%)}
-      60%{transform:translate(15%,0%)}
-      70%{transform:translate(0%,15%)}
-      80%{transform:translate(3%,35%)}
-      90%{transform:translate(-10%,10%)}
-    }
-
-    .wrap{max-width:var(--max); margin:0 auto; padding:32px 20px 90px;}
-    .nav{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(12px);
-      background: linear-gradient(180deg, rgba(11,18,32,.78), rgba(11,18,32,.35));
-      border-bottom:1px solid rgba(148,163,184,.18);
-    }
-    .nav-inner{
-      max-width:var(--max); margin:0 auto;
-      padding:14px 20px;
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px; min-width:170px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:999px;
-      background: radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,.2));
-      box-shadow: 0 0 0 6px rgba(56,189,248,.12), 0 0 26px rgba(56,189,248,.35);
-    }
-    .brand span{font-weight:700; letter-spacing:.2px}
-    .pill{
-      display:inline-flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
-    }
-    .pill a{
-      color:var(--muted);
-      font-weight:600;
-      font-size:13px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(148,163,184,.18);
-      background:rgba(255,255,255,.03);
-      transition: transform .15s ease, background .15s ease, border-color .15s ease, color .15s ease;
-    }
-    .pill a:hover{
-      text-decoration:none;
-      transform: translateY(-1px);
-      background:rgba(255,255,255,.06);
-      border-color:rgba(56,189,248,.35);
-      color:var(--text);
-    }
-
-    /* Hero */
-    .hero{
-      margin-top:38px;
-      border-radius:var(--radius2);
-      padding:38px 26px 28px;
-      position:relative;
-      overflow:hidden;
-      background:
-        radial-gradient(900px 500px at 15% 25%, rgba(56,189,248,.20), transparent 60%),
-        radial-gradient(700px 400px at 80% 35%, rgba(167,139,250,.18), transparent 55%),
-        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border:1px solid rgba(148,163,184,.18);
-      box-shadow: var(--shadow);
-    }
-    .hero:before{
-      content:"";
-      position:absolute; inset:-2px;
-      background: linear-gradient(90deg, rgba(56,189,248,.35), rgba(167,139,250,.25), rgba(52,211,153,.22));
-      filter: blur(30px);
-      opacity:.22;
-      z-index:0;
-    }
-    .hero > *{position:relative; z-index:1}
-
-    .kicker{
-      display:flex; flex-wrap:wrap; gap:10px;
-      align-items:center;
-      font-weight:600;
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:12px;
-    }
-    .tag{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:7px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(148,163,184,.18);
-      color:var(--text);
-      font-weight:700;
-      font-size:12px;
-      letter-spacing:.2px;
-    }
-    .tag .mini{width:7px;height:7px;border-radius:999px;background:rgba(56,189,248,.85)}
-    h1{
-      margin:0;
-      font-size: clamp(34px, 4.6vw, 54px);
-      line-height:1.05;
-      letter-spacing:-.9px;
-    }
-    .subtitle{
-      margin:12px 0 0;
-      color:var(--muted);
-      font-size: clamp(15px, 1.6vw, 18px);
-      max-width: 68ch;
-    }
-    .cta{
-      margin-top:18px;
-      display:flex; flex-wrap:wrap; gap:10px;
-    }
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:11px 14px;
-      border-radius: 999px;
-      font-weight:700;
-      border:1px solid rgba(148,163,184,.18);
-      background: rgba(255,255,255,.05);
-      color: var(--text);
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    }
-    .btn:hover{
-      text-decoration:none;
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.08);
-      border-color: rgba(56,189,248,.35);
-    }
-    .btn.primary{
-      background: linear-gradient(90deg, rgba(56,189,248,.22), rgba(167,139,250,.18));
-      border-color: rgba(56,189,248,.35);
-    }
-    .btn .icon{opacity:.9}
-
-    /* Grid sections */
-    .grid{
-      margin-top:34px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:16px;
-    }
-    @media (max-width: 860px){
-      .grid{grid-template-columns:1fr}
-      .pill{justify-content:flex-start}
-      .brand{min-width:auto}
-    }
-
-    .card{
-      border-radius: var(--radius);
-      background: var(--card);
-      border: 1px solid rgba(148,163,184,.18);
-      padding: 20px 18px;
-      box-shadow: 0 14px 34px rgba(0,0,0,.22);
-      transform: translateY(0);
-      transition: transform .18s ease, background .18s ease, border-color .18s ease;
-    }
-    .card:hover{
-      transform: translateY(-2px);
-      background: var(--card2);
-      border-color: rgba(56,189,248,.25);
-    }
-    .card h2{
-      margin:0 0 10px;
-      font-size: 16px;
-      letter-spacing:.2px;
-      text-transform:uppercase;
-      color: rgba(226,232,240,.9);
-    }
-    .muted{color:var(--muted)}
-    .list{margin:10px 0 0; padding-left: 18px;}
-    .list li{margin:8px 0; color: rgba(226,232,240,.92)}
-
-    /* Experience */
-    .section-title{
-      margin-top:54px;
-      display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
-    }
-    .section-title h2{
-      margin:0;
-      font-size: 18px;
-      letter-spacing:.2px;
-      text-transform:uppercase;
-      color: rgba(226,232,240,.9);
-    }
-    .section-title p{margin:0; color:var(--muted); font-size:14px}
-    .xp{
-      margin-top:14px;
-      display:grid;
-      gap:14px;
-    }
-    .xp-item{
-      position:relative;
-      overflow:hidden;
-    }
-    .xp-head{
-      display:flex; flex-wrap:wrap; gap:10px;
-      justify-content:space-between; align-items:baseline;
-      margin-bottom:8px;
-    }
-    .xp-role{
-      font-weight:800;
-      font-size: 18px;
-      letter-spacing:-.2px;
-    }
-    .xp-company{
-      font-weight:700;
-      color: var(--brand);
-    }
-    .xp-meta{
-      color: var(--muted);
-      font-size: 13px;
-      font-weight:600;
-    }
-
-    /* Metric tiles */
-    .metrics{
-      margin-top:14px;
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-    }
-    @media (max-width: 860px){
-      .metrics{grid-template-columns:1fr}
-    }
-    .metric{
-      padding:14px 14px;
-      border-radius: 16px;
-      border:1px solid rgba(148,163,184,.18);
-      background: rgba(255,255,255,.04);
-    }
-    .metric .num{
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing:-.3px;
-      margin:0;
-    }
-    .metric .label{
-      margin:4px 0 0;
-      color: var(--muted);
-      font-weight:600;
-      font-size: 13px;
-    }
-    .metric .hint{
-      margin:8px 0 0;
-      color: rgba(226,232,240,.86);
-      font-size: 13px;
-      line-height:1.35;
-    }
-
-    /* Chips */
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
-    .chip{
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(148,163,184,.18);
-      background: rgba(255,255,255,.04);
-      color: rgba(226,232,240,.92);
-      font-weight:700;
-      font-size: 12px;
-    }
-
-    /* Footer */
-    footer{
-      margin-top:70px;
-      text-align:center;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* Scroll reveal */
-    .reveal{opacity:0; transform: translateY(10px); transition: opacity .55s ease, transform .55s ease;}
-    .reveal.visible{opacity:1; transform: translateY(0);}
-
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      .grain{animation:none}
-      .reveal{opacity:1; transform:none}
-      .card,.btn,.pill a{transition:none}
-    }
-  </style>
-
-  <script>
-    // Scroll reveal
-    document.addEventListener("DOMContentLoaded", () => {
-      const els = document.querySelectorAll(".reveal");
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
-      }, { threshold: 0.12 });
-      els.forEach(el => io.observe(el));
-    });
-  </script>
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Serdar Hicyilmaz",
-    "jobTitle": "Account Executive",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Eindhoven",
-      "addressCountry": "NL"
-    },
-    "email": "mailto:a.serdarh@hotmail.com"
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-
 <body>
-  <div class="grain"></div>
-
   <div class="nav">
     <div class="nav-inner">
       <div class="brand">
-        <div class="dot"></div>
-        <span>Serdar Hicyilmaz</span>
+        <div class="mark">SH</div>
+        <div class="name">
+          <b>Serdar Hicyilmaz</b>
+          <span>Account Executive · UK market</span>
+        </div>
       </div>
-      <div class="pill" aria-label="Section navigation">
-        <a href="#about">About</a>
-        <a href="#results">Results</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <div class="navlinks">
+        <a data-transition="true" href="index.html">Home</a>
+        <a data-transition="true" href="experience.html">Experience</a>
+        <a data-transition="true" href="results.html">Results</a>
+        <a data-transition="true" href="contact.html">Contact</a>
       </div>
     </div>
   </div>
-
-  <main class="wrap">
-
-    <section class="hero reveal">
+  <main class="wrap page">
+    
+<section class="hero">
+  <div class="hero-inner">
+    <div>
       <div class="kicker">
-        <span class="tag"><span class="mini"></span> UK Market Focus</span>
-        <span class="tag"><span class="mini" style="background:rgba(167,139,250,.95)"></span> SaaS Sales</span>
-        <span class="tag"><span class="mini" style="background:rgba(52,211,153,.95)"></span> E-commerce Automation</span>
+        <span class="pill"><span class="dot"></span> UK market focus</span>
+        <span class="pill" style="background:rgba(110,86,207,.08); border-color:rgba(110,86,207,.14)">
+          <span class="dot" style="background:rgba(110,86,207,.85)"></span> SaaS sales
+        </span>
+        <span class="pill" style="background:rgba(22,163,74,.08); border-color:rgba(22,163,74,.14)">
+          <span class="dot" style="background:rgba(22,163,74,.85)"></span> e-commerce automation
+        </span>
       </div>
 
-      <h1>Account Executive helping UK merchants grow through shipping automation.</h1>
+      <h1>Account Executive driving growth for UK e-commerce merchants.</h1>
       <p class="subtitle">
-        I run end-to-end sales cycles across e-commerce logistics and automation. Strong in discovery,
-        qualification (MEDDICC), value-based demos, negotiation, and expansion.
+        End-to-end SaaS sales: discovery → MEDDICC qualification → value-based demos → negotiation → close.
+        Strong in pipeline hygiene, forecasting, and expansion motions.
       </p>
 
-      <div class="cta">
-        <a class="btn primary" href="#contact" aria-label="Jump to contact">
-          <span class="icon">✉️</span> Contact
-        </a>
-        <a class="btn" href="#experience" aria-label="Jump to experience">
-          <span class="icon">📌</span> Experience
-        </a>
-        <a class="btn" href="#results" aria-label="Jump to results">
-          <span class="icon">📈</span> Results
-        </a>
-      </div>
-    </section>
-
-    <section class="grid" id="about">
-      <div class="card reveal">
-        <h2>About</h2>
-        <p class="muted" style="margin:0">
-          Sales professional with a Marketing background (MSc) and strong international experience across The Netherlands and Germany.
-          I’m motivated by solving operational problems, aligning product value with business goals, and driving sustainable revenue growth.
-        </p>
-        <ul class="list">
-          <li><strong>Current:</strong> Account Executive at Sendcloud (UK market) — e-commerce shipping automation</li>
-          <li><strong>Previous:</strong> Account Executive at ProcessMaker (workflow automation) and SiteLucent</li>
-          <li><strong>Strengths:</strong> Discovery, MEDDICC, pipeline management, and expansion motions</li>
-        </ul>
+      <div class="actions">
+        <a class="btn primary" href="contact.html" data-transition="true">✉️ Contact</a>
+        <a class="btn" href="experience.html" data-transition="true">📌 Experience</a>
+        <a class="btn" href="results.html" data-transition="true">📈 Results</a>
+        <a class="btn" href="javascript:window.print()">🖨️ Save as PDF</a>
       </div>
 
-      <div class="card reveal">
-        <h2>Quick facts</h2>
-        <div class="metrics" style="grid-template-columns:1fr; gap:10px;">
-          <div class="metric">
-            <p class="num">Eindhoven, NL</p>
-            <p class="label">Base location</p>
-          </div>
-          <div class="metric">
-            <p class="num">UK Market</p>
-            <p class="label">Territory focus</p>
-          </div>
-          <div class="metric">
-            <p class="num">SaaS + Logistics</p>
-            <p class="label">Industry experience</p>
-          </div>
-        </div>
+      <p class="muted" style="margin:14px 0 0; font-weight:650">
+        Eindhoven, NL · Marketing MSc (Radboud) · International experience (NL/DE)
+      </p>
+    </div>
+
+    <div class="headshot">
+      <div class="avatar">
+        <img src="assets/headshot.jpg" alt="Serdar Hicyilmaz headshot" />
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="results" class="reveal">
-      <div class="section-title">
-        <h2>Results</h2>
-        <p>Make this section “numbers-first”. Replace placeholders with your real metrics.</p>
-      </div>
+<div class="section-title">
+  <h2>Profile</h2>
+  <p>Short, scannable, and ATS-friendly.</p>
+</div>
 
-      <div class="metrics">
-        <div class="metric">
-          <p class="num">£X00k</p>
-          <p class="label">New ARR closed (UK)</p>
-          <p class="hint">Replace with your last 6–12 months closed-won total.</p>
-        </div>
-        <div class="metric">
-          <p class="num">X%</p>
-          <p class="label">Quota attainment</p>
-          <p class="hint">E.g., 115% in Q3, 102% YTD.</p>
-        </div>
-        <div class="metric">
-          <p class="num">£Xk</p>
-          <p class="label">Avg. deal size</p>
-          <p class="hint">Or ACV / MRR, depending on your motion.</p>
-        </div>
-      </div>
+<div class="grid">
+  <div class="card">
+    <h3>What I do</h3>
+    <ul class="list">
+      <li>Own UK territory pipeline for SMB and Mid-Market e-commerce merchants</li>
+      <li>Run full-cycle sales with strong qualification (MEDDICC) and forecasting</li>
+      <li>Sell value: automation that reduces shipping admin, errors, and carrier complexity</li>
+      <li>Partner with SDRs, Partner Managers, and Customer Success to win and expand</li>
+    </ul>
+  </div>
 
-      <div class="card" style="margin-top:12px">
-        <h2>Highlights</h2>
-        <ul class="list">
-          <li><strong>Pipeline:</strong> built a consistent outbound motion across UK merchants and partners</li>
-          <li><strong>Value:</strong> positioned automation to reduce shipping admin time, errors, and carrier complexity</li>
-          <li><strong>Expansion:</strong> grew accounts through module upsells and cross-border features</li>
-        </ul>
-        <p class="muted" style="margin:10px 0 0">
-          Tip: keep this brutally concrete (time saved, costs reduced, conversion lift, faster onboarding, etc.).
-        </p>
-      </div>
-    </section>
+  <div class="card">
+    <h3>Core strengths</h3>
+    <div class="chips">
+      <span class="chip">Discovery</span>
+      <span class="chip">MEDDICC</span>
+      <span class="chip">Negotiation</span>
+      <span class="chip">Forecasting</span>
+      <span class="chip">Salesforce hygiene</span>
+      <span class="chip">Expansion</span>
+      <span class="chip">Multi-threading</span>
+    </div>
+    <p class="muted" style="margin:12px 0 0">
+      This is a “test” version. Later we’ll add precise metrics and proof points.
+    </p>
+  </div>
+</div>
 
-    <section id="experience" class="reveal">
-      <div class="section-title">
-        <h2>Experience</h2>
-        <p>End-to-end SaaS sales across e-commerce logistics & automation.</p>
-      </div>
+<div class="section-title">
+  <h2>Skills</h2>
+  <p>Keep it simple for recruiters.</p>
+</div>
 
-      <div class="xp">
-        <div class="card xp-item">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Account Executive <span class="muted">—</span> <span class="xp-company">Sendcloud</span></div>
-              <div class="xp-meta">Dec 2023 – Present · Eindhoven, The Netherlands · UK market</div>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Own and manage a pipeline of UK-based SMB and Mid-Market e-commerce merchants</li>
-            <li>Run the full sales cycle: outbound prospecting → discovery → demo → negotiation → close</li>
-            <li>Diagnose shipping inefficiencies and position automation solutions to improve operations</li>
-            <li>Apply MEDDICC to qualify opportunities and prioritize high-value deals</li>
-            <li>Maintain forecasting, activity tracking, and pipeline integrity in Salesforce</li>
-            <li>Drive expansion via module upsells and cross-border shipping solutions</li>
-            <li>Partner closely with SDRs, Partner Managers, and Customer Success for onboarding and retention</li>
-          </ul>
-        </div>
+<div class="card">
+  <div class="chips">
+    <span class="chip">Full-cycle SaaS sales</span>
+    <span class="chip">Pipeline management</span>
+    <span class="chip">Outbound prospecting</span>
+    <span class="chip">Value-based demos</span>
+    <span class="chip">Account expansion</span>
+    <span class="chip">Renewals</span>
+    <span class="chip">Salesforce</span>
+    <span class="chip">CRM systems</span>
+    <span class="chip">E-commerce logistics</span>
+  </div>
+  <div class="chips" style="margin-top:12px">
+    <span class="chip">Turkish (Native)</span>
+    <span class="chip">English (Fluent)</span>
+    <span class="chip">Dutch (B1)</span>
+    <span class="chip">German (B1)</span>
+  </div>
+</div>
 
-        <div class="card xp-item">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Account Executive <span class="muted">—</span> <span class="xp-company">ProcessMaker</span></div>
-              <div class="xp-meta">Mar 2023 – Nov 2023 · The Hague, The Netherlands</div>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Developed and managed a sales pipeline to move strategic transactions through the process</li>
-            <li>Applied MEDDICC qualification to identify highly qualified opportunities</li>
-            <li>Prospected targeted accounts via cold call, email, and social strategies</li>
-            <li>Used Salesforce to track progress and manage opportunities across the full cycle</li>
-            <li>Collaborated with SDRs in pre-sales and Sales Engineers during demo & POC stages</li>
-          </ul>
-        </div>
-
-        <div class="card xp-item">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Account Executive <span class="muted">—</span> <span class="xp-company">SiteLucent</span></div>
-              <div class="xp-meta">Dec 2021 – Feb 2023 · Eindhoven, The Netherlands</div>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Built and managed a pipeline of leads from “prospect” to “close”</li>
-            <li>Created client demos/presentations and quotes/proposals</li>
-            <li>Executed account plans aligned to customer objectives and product vision</li>
-            <li>Implemented structured tasks to put each client on a path to expansion</li>
-            <li>Handled contract renewals; managed a portfolio corresponding to 20%+ of ARR</li>
-          </ul>
-        </div>
-
-        <div class="card xp-item">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Sales Development Representative <span class="muted">—</span> <span class="xp-company">Container xChange</span></div>
-              <div class="xp-meta">Aug 2021 – Nov 2021 · Hamburg, Germany</div>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Sourced new sales opportunities via outbound calls, emails, and follow-ups</li>
-            <li>Evaluated customers and advanced them through the pipeline using sound judgment</li>
-            <li>Maintained pipeline integrity and accurate activity tracking in PipeDrive</li>
-            <li>Collaborated closely with Account Executives to support pre-sales stages</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="reveal">
-      <div class="section-title">
-        <h2>Skills</h2>
-        <p>Simple, scannable, and ATS-friendly.</p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h2>Commercial</h2>
-          <div class="chips">
-            <span class="chip">Full-cycle sales</span>
-            <span class="chip">Discovery & qualification</span>
-            <span class="chip">MEDDICC</span>
-            <span class="chip">Negotiation</span>
-            <span class="chip">Forecasting</span>
-            <span class="chip">Pipeline management</span>
-            <span class="chip">Account expansion</span>
-            <span class="chip">Renewals</span>
-          </div>
-        </div>
-        <div class="card">
-          <h2>Tools & domains</h2>
-          <div class="chips">
-            <span class="chip">Salesforce</span>
-            <span class="chip">CRMs</span>
-            <span class="chip">SaaS</span>
-            <span class="chip">E-commerce logistics</span>
-            <span class="chip">Shipping automation</span>
-            <span class="chip">Workflow automation</span>
-            <span class="chip">Outbound prospecting</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:14px">
-        <h2>Languages</h2>
-        <div class="chips">
-          <span class="chip">Turkish (Native)</span>
-          <span class="chip">English (Fluent)</span>
-          <span class="chip">Dutch (B1)</span>
-          <span class="chip">German (B1)</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="reveal">
-      <div class="section-title">
-        <h2>Education</h2>
-        <p>Marketing background that supports commercial strategy.</p>
-      </div>
-      <div class="xp">
-        <div class="card">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Radboud University Nijmegen <span class="muted">—</span> <span class="xp-company">MSc Marketing</span></div>
-              <div class="xp-meta">Sep 2019 – Jan 2021 · The Netherlands</div>
-            </div>
-          </div>
-          <ul class="list">
-            <li>External Officer: International Committee, Synergy Student Association (Autumn 2019 – Spring 2020)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Bilgi University Istanbul <span class="muted">—</span> <span class="xp-company">BBA</span></div>
-              <div class="xp-meta">Sep 2014 – Aug 2018 · Turkey</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="xp-head">
-            <div>
-              <div class="xp-role">Würzburg University <span class="muted">—</span> <span class="xp-company">Erasmus Exchange</span></div>
-              <div class="xp-meta">Mar 2017 – Aug 2017 · Germany</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="reveal">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Make it easy to reach you.</p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h2>Reach me</h2>
-          <p style="margin:0 0 10px"><strong>Email:</strong> <a href="mailto:a.serdarh@hotmail.com">a.serdarh@hotmail.com</a></p>
-          <p style="margin:0 0 10px"><strong>Location:</strong> Eindhoven, The Netherlands</p>
-          <p style="margin:0"><strong>LinkedIn:</strong> <span class="muted">Add your public LinkedIn URL here</span></p>
-          <p class="muted" style="margin:12px 0 0">Tip: replace the LinkedIn placeholder with a clickable link.</p>
-        </div>
-        <div class="card">
-          <h2>Download</h2>
-          <p class="muted" style="margin:0 0 10px">
-            Want a PDF version too? You can print this page to PDF:
-            <strong>Browser → Print → Save as PDF</strong>.
-          </p>
-          <a class="btn primary" href="javascript:window.print()"><span class="icon">🖨️</span> Print / Save as PDF</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="reveal">
-      © <span id="y"></span> Serdar Hicyilmaz · Built as a one-page portfolio (GitHub Pages ready)
-    </footer>
+    <footer>© <span id="y"></span> Serdar Hicyilmaz · Recruiter-friendly · Print to PDF supported</footer>
   </main>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
