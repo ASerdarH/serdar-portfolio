@@ -495,3 +495,12 @@ footer{
 .companyName a{text-decoration:none;color:rgba(245,247,255,.95);border-bottom:1px solid rgba(245,247,255,.15);transition:.2s}
 .companyName a:hover{border-bottom-color:rgba(124,58,237,.6)}
 .ext{opacity:.6;font-weight:900;margin-left:4px}
+
+
+/* --- Force Experience boxes to stack vertically --- */
+#experience .grid2{
+  grid-template-columns: 1fr !important;
+}
+#experience .glass{
+  width: 100%;
+}
