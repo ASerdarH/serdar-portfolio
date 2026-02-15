@@ -7,10 +7,15 @@
   <meta name="description" content="Serdar Hicyilmaz — Account Executive focused on the UK market. SaaS sales across e-commerce shipping automation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob" style="left:0%; top:0%"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
 
   <div class="nav">
     <div class="nav-inner">
@@ -18,7 +23,7 @@
         <div class="mark">SH</div>
         <div>
           <b>Serdar Hicyilmaz</b>
-          <span>Account Executive · UK market</span>
+          <span>Account Executive, UK market</span>
         </div>
       </div>
 
@@ -28,7 +33,6 @@
         <a href="#experience">Experience</a>
         <a href="#wins">Wins</a>
         <a href="#skills">Skills</a>
-        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -39,232 +43,267 @@
     <section id="home" class="hero reveal">
       <div class="hero-inner">
         <div>
-          <h1>Welcome</h1>
+          <h1>Sales, but make it elegant.</h1>
           <p class="lead">
-            Hi, I’m Serdar — an Account Executive focused on the UK e-commerce market.
-            I help merchants simplify shipping operations and scale with automation.
+            I am an Account Executive focused on the UK e-commerce market. I help merchants simplify shipping operations
+            and scale with automation. Strong in discovery, MEDDICC qualification, forecasting discipline, and expansion motions.
           </p>
 
-          <div class="pills">
+          <div class="pills" aria-label="Highlights">
             <span class="pill">UK market focus</span>
-            <span class="pill p2">SaaS sales</span>
-            <span class="pill p3">E-commerce automation</span>
+            <span class="pill">SaaS sales</span>
+            <span class="pill">E-commerce automation</span>
+            <span class="pill">MEDDICC</span>
           </div>
 
           <div class="actions">
-            <a class="btn primary" href="#contact">✉️ Contact</a>
-            <a class="btn" href="#experience">📌 Experience</a>
-            <a class="btn" href="javascript:window.print()">🖨️ Save as PDF</a>
+            <a class="btn primary" href="#contact">Contact</a>
+            <a class="btn" href="#experience">Experience</a>
+            <a class="btn" href="javascript:window.print()">Save as PDF</a>
           </div>
 
-          <div class="meta">Eindhoven, The Netherlands · English (Fluent) · Dutch/German (B1)</div>
+          <p class="lead" style="margin-top:12px; font-size:13px; color: rgba(244,247,255,.70); font-weight:700">
+            Eindhoven, The Netherlands
+          </p>
         </div>
 
-        <div class="avatar" aria-label="Headshot">
-          <img src="assets/headshot.jpg" alt="Serdar Hicyilmaz headshot" />
+        <div class="photo">
+          <div class="photo-card" aria-label="Headshot card">
+            <div class="ring">
+              <div class="photo-inner">
+                <div class="photo-glow"></div>
+                <img src="assets/headshot.jpg" alt="Serdar Hicyilmaz headshot" />
+              </div>
+            </div>
+            <div class="caption">Click around. This page is interactive.</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section reveal">
-      <h2>About Me</h2>
+      <h2>About</h2>
       <p class="sub">
-        Sales professional with a Marketing MSc (Radboud) and international SaaS experience across The Netherlands and Germany.
-        Strong in discovery, MEDDICC qualification, forecasting discipline, and expansion motions.
+        Marketing MSc (Radboud) with international SaaS experience across The Netherlands and Germany.
+        I enjoy finding the real operational problem, building a clear value story, and running a structured sales process.
       </p>
 
-      <div class="two-col">
-        <div class="card small-card">
+      <div class="grid">
+        <div class="card">
           <h3>How I work</h3>
           <ul class="list">
-            <li>Deep discovery to understand workflows, bottlenecks, and stakeholders</li>
-            <li>Clear ROI narrative: time saved, fewer errors, lower operational friction</li>
-            <li>Structured process: MEDDICC, mutual action plans, and clean forecasting</li>
+            <li>Deep discovery to map workflows, pain points, and stakeholders</li>
+            <li>Clear ROI narrative with practical outcomes</li>
+            <li>Structured execution with qualification and clean forecasting</li>
+            <li>Strong collaboration with SDRs, partner teams, and Customer Success</li>
           </ul>
         </div>
-        <div class="card small-card">
-          <h3>What I’m building (test version)</h3>
-          <ul class="list">
-            <li>This site is a test: we’ll add real numbers and win stories next</li>
-            <li>Later: add LinkedIn link, achievements, and testimonials</li>
-            <li>Recruiter-friendly: print to PDF works cleanly</li>
-          </ul>
+
+        <div class="card">
+          <h3>Focus areas</h3>
+          <div class="chips">
+            <span class="chip">Outbound</span>
+            <span class="chip">Discovery</span>
+            <span class="chip">Qualification</span>
+            <span class="chip">Demos</span>
+            <span class="chip">Negotiation</span>
+            <span class="chip">Forecasting</span>
+            <span class="chip">Expansion</span>
+          </div>
+          <p class="sub" style="margin-top:12px">
+            This is a test version. Next we will add your real performance numbers and stronger proof points.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="experience" class="section reveal">
       <h2>Experience</h2>
-      <p class="sub">Swipe through roles. Click “More info” or double‑click a card for details.</p>
+      <p class="sub">Tap a role to expand. Built to be recruiter-friendly and fast to scan.</p>
 
-      <div class="carousel" data-carousel>
-        <div class="carousel-top">
-          <div class="counter" data-count>1/4</div>
-          <div class="controls">
-            <button class="iconbtn" data-prev aria-label="Previous">❮</button>
-            <button class="iconbtn" data-next aria-label="Next">❯</button>
+      <div class="timeline">
+        <div class="item">
+          <button type="button" data-acc>
+            <div>
+              <div class="role">Account Executive, Sendcloud</div>
+              <div class="meta">Dec 2023 to Present, Eindhoven, UK market</div>
+              <div class="badge">Shipping automation and e-commerce logistics</div>
+            </div>
+            <div class="chev" data-chev>+</div>
+          </button>
+          <div class="panel">
+            <div class="inner">
+              <ul class="list">
+                <li>Own a pipeline of UK SMB and Mid-Market e-commerce merchants</li>
+                <li>Run full-cycle sales from prospecting to close</li>
+                <li>Diagnose shipping inefficiencies and position automation solutions</li>
+                <li>Use MEDDICC to prioritize opportunities and improve quality</li>
+                <li>Maintain forecasting and CRM hygiene in Salesforce</li>
+                <li>Drive expansion through module adoption and cross-border features</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="card slide active" data-modal="sendcloud">
-          <h3>Sendcloud — UK | Dec 2023 – Present</h3>
-          <div class="where">Account Executive</div>
-          <ul class="bullets">
-            <li>Own UK pipeline for SMB & Mid‑Market e-commerce merchants</li>
-            <li>Full sales cycle: discovery → demo → negotiation → close</li>
-            <li>MEDDICC qualification + Salesforce forecasting discipline</li>
-          </ul>
-          <div class="more">
-            <a class="btn" href="javascript:void(0)" data-more="sendcloud">More info</a>
-            <span class="hint">Double‑click card for details</span>
+        <div class="item">
+          <button type="button" data-acc>
+            <div>
+              <div class="role">Account Executive, ProcessMaker</div>
+              <div class="meta">Mar 2023 to Nov 2023, The Hague</div>
+              <div class="badge">Workflow automation, strategic pipeline</div>
+            </div>
+            <div class="chev" data-chev>+</div>
+          </button>
+          <div class="panel">
+            <div class="inner">
+              <ul class="list">
+                <li>Managed strategic transactions through the sales process</li>
+                <li>Prospected targeted accounts via calls, email, and social</li>
+                <li>Collaborated with SDRs and Sales Engineers during demo and POC</li>
+                <li>Tracked opportunities and forecasts in Salesforce</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="card slide" data-modal="processmaker">
-          <h3>ProcessMaker — NL | Mar 2023 – Nov 2023</h3>
-          <div class="where">Account Executive</div>
-          <ul class="bullets">
-            <li>Managed strategic pipeline and applied MEDDICC</li>
-            <li>Partnered with SDRs + Sales Engineers through demo/POC</li>
-            <li>Prospected via cold call, email, and social</li>
-          </ul>
-          <div class="more">
-            <a class="btn" href="javascript:void(0)" data-more="processmaker">More info</a>
-            <span class="hint">Double‑click card for details</span>
+        <div class="item">
+          <button type="button" data-acc>
+            <div>
+              <div class="role">Account Executive, SiteLucent</div>
+              <div class="meta">Dec 2021 to Feb 2023, Eindhoven</div>
+              <div class="badge">Account expansion and renewals</div>
+            </div>
+            <div class="chev" data-chev>+</div>
+          </button>
+          <div class="panel">
+            <div class="inner">
+              <ul class="list">
+                <li>Owned pipeline from prospect to close</li>
+                <li>Delivered demos and proposals, negotiated terms</li>
+                <li>Managed renewals and expansion plans</li>
+                <li>Managed a portfolio representing 20 percent plus of ARR</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="card slide" data-modal="sitelucent">
-          <h3>SiteLucent — NL | Dec 2021 – Feb 2023</h3>
-          <div class="where">Account Executive</div>
-          <ul class="bullets">
-            <li>Built pipeline from prospect to close; delivered demos & proposals</li>
-            <li>Managed portfolio representing 20%+ of ARR</li>
-            <li>Renewals + structured expansion plans</li>
-          </ul>
-          <div class="more">
-            <a class="btn" href="javascript:void(0)" data-more="sitelucent">More info</a>
-            <span class="hint">Double‑click card for details</span>
+        <div class="item">
+          <button type="button" data-acc>
+            <div>
+              <div class="role">Sales Development Representative, Container xChange</div>
+              <div class="meta">Aug 2021 to Nov 2021, Hamburg</div>
+              <div class="badge">Outbound and CRM discipline</div>
+            </div>
+            <div class="chev" data-chev>+</div>
+          </button>
+          <div class="panel">
+            <div class="inner">
+              <ul class="list">
+                <li>Generated outbound opportunities via calls and email follow-ups</li>
+                <li>Qualified prospects and maintained data integrity in PipeDrive</li>
+                <li>Worked closely with Account Executives in pre-sales stages</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="card slide" data-modal="containerx">
-          <h3>Container xChange — DE | Aug 2021 – Nov 2021</h3>
-          <div class="where">Sales Development Representative</div>
-          <ul class="bullets">
-            <li>Outbound lead gen: calls, emails, follow-up</li>
-            <li>Pipeline management and CRM hygiene (PipeDrive)</li>
-            <li>Worked closely with Account Executives</li>
+      <div class="sheet reveal">
+        <div class="inner">
+          <h3>Education</h3>
+          <ul class="list">
+            <li>MSc Marketing, Radboud University Nijmegen</li>
+            <li>Bachelor of Business Administration, Bilgi University Istanbul</li>
+            <li>Erasmus Exchange, Würzburg University</li>
           </ul>
-          <div class="more">
-            <a class="btn" href="javascript:void(0)" data-more="containerx">More info</a>
-            <span class="hint">Double‑click card for details</span>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="wins" class="section reveal">
       <h2>Wins</h2>
-      <p class="sub">Test version: strong, recruiter-friendly proof points without sensitive numbers.</p>
+      <p class="sub">Test version with credible proof points. We will replace this with real numbers next.</p>
 
-      <div class="two-col">
-        <div class="card small-card">
+      <div class="grid">
+        <div class="card">
           <h3>Selected wins</h3>
           <ul class="list">
-            <li>Built consistent UK pipeline via outbound + partner motion</li>
-            <li>Improved qualification quality using MEDDICC and multi-threading</li>
-            <li>Converted operational pain points into clear ROI narratives</li>
-            <li>Drove expansion through module adoption and cross-border features</li>
+            <li>Built consistent UK pipeline via outbound and partner motion</li>
+            <li>Improved opportunity quality through structured qualification</li>
+            <li>Created clear ROI narratives from operational pain points</li>
+            <li>Expanded accounts through additional modules and cross-border features</li>
           </ul>
         </div>
-        <div class="card small-card">
-          <h3>Metrics (placeholders)</h3>
+
+        <div class="card">
+          <h3>Metrics placeholders</h3>
           <ul class="list">
-            <li><b>Quota attainment:</b> X% (YTD)</li>
-            <li><b>Closed-won:</b> £X00k (last 12 months)</li>
-            <li><b>Avg deal size:</b> £Xk</li>
-            <li><b>Sales cycle:</b> X–Y days</li>
+            <li>Quota attainment: X percent</li>
+            <li>Closed won: X</li>
+            <li>Average deal size: X</li>
+            <li>Sales cycle: X to Y days</li>
           </ul>
-          <div class="hint">We’ll replace these with your real numbers later.</div>
+          <p class="sub" style="margin-top:12px">Public site friendly. Ranges are fine.</p>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section reveal">
       <h2>Skills</h2>
-      <p class="sub">Simple, scannable, ATS-friendly.</p>
-      <div class="card small-card">
-        <div class="chips">
-          <span class="chip">Full-cycle SaaS sales</span>
-          <span class="chip">Discovery</span>
-          <span class="chip">MEDDICC</span>
-          <span class="chip">Value-based demos</span>
-          <span class="chip">Negotiation</span>
-          <span class="chip">Forecasting</span>
-          <span class="chip">Salesforce</span>
-          <span class="chip">E-commerce logistics</span>
-          <span class="chip">Account expansion</span>
-        </div>
-        <div class="chips" style="margin-top:12px">
-          <span class="chip">Turkish (Native)</span>
-          <span class="chip">English (Fluent)</span>
-          <span class="chip">Dutch (B1)</span>
-          <span class="chip">German (B1)</span>
-        </div>
-      </div>
-    </section>
+      <p class="sub">Recruiter friendly and ATS friendly.</p>
 
-    <section id="testimonials" class="section reveal">
-      <h2>Testimonials</h2>
-      <p class="sub">We can add LinkedIn recommendations later. For now, a placeholder.</p>
-      <div class="card small-card">
-        <h3>Mentorship & collaboration</h3>
-        <p class="sub" style="margin:0">
-          Add a short quote here later (1–2 sentences) with name + title + company.
-        </p>
-        <div class="more" style="margin-top:12px">
-          <a class="btn" href="javascript:void(0)" data-more="testimonials">How to write good testimonials</a>
+      <div class="sheet">
+        <div class="inner">
+          <h3>Commercial and tools</h3>
+          <div class="chips">
+            <span class="chip">Full-cycle SaaS sales</span>
+            <span class="chip">MEDDICC</span>
+            <span class="chip">Salesforce</span>
+            <span class="chip">Pipeline management</span>
+            <span class="chip">Forecasting</span>
+            <span class="chip">Negotiation</span>
+            <span class="chip">Account expansion</span>
+            <span class="chip">E-commerce logistics</span>
+          </div>
+
+          <h3 style="margin-top:16px">Languages</h3>
+          <div class="chips">
+            <span class="chip">Turkish, native</span>
+            <span class="chip">English, fluent</span>
+            <span class="chip">Dutch, B1</span>
+            <span class="chip">German, B1</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section reveal">
       <h2>Contact</h2>
-      <p class="sub">Make it easy to reach you.</p>
-      <div class="two-col">
-        <div class="card small-card">
+      <p class="sub">One click and you are done.</p>
+
+      <div class="grid">
+        <div class="card">
           <h3>Reach me</h3>
           <ul class="list">
-            <li><b>Email:</b> <a href="mailto:a.serdarh@hotmail.com">a.serdarh@hotmail.com</a></li>
-            <li><b>Location:</b> Eindhoven, The Netherlands</li>
-            <li><b>LinkedIn:</b> <span class="sub" style="margin:0">Add your public LinkedIn URL here</span></li>
+            <li>Email: <a class="link" href="mailto:a.serdarh@hotmail.com">a.serdarh@hotmail.com</a></li>
+            <li>Location: Eindhoven, The Netherlands</li>
+            <li>LinkedIn: add your public URL here</li>
           </ul>
         </div>
-        <div class="card small-card">
+
+        <div class="card">
           <h3>Download</h3>
-          <p class="sub" style="margin:0 0 12px">Print this page to PDF: <b>Browser → Print → Save as PDF</b>.</p>
-          <a class="btn primary" href="javascript:window.print()">🖨️ Save as PDF</a>
+          <p class="sub">Print this page to PDF: browser print, then save as PDF.</p>
+          <a class="btn primary" href="javascript:window.print()">Save as PDF</a>
         </div>
       </div>
     </section>
 
-    <footer class="reveal">© <span id="y"></span> Serdar Hicyilmaz · Built in a Storyfolio-like style</footer>
+    <footer class="reveal">
+      © <span id="y"></span> Serdar Hicyilmaz
+    </footer>
   </main>
 
-  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <div class="modal-head">
-        <h3 id="modalTitle">Details</h3>
-        <button class="x" id="modalClose" aria-label="Close">✕</button>
-      </div>
-      <div class="modal-body" id="modalBody"></div>
-    </div>
-  </div>
-
-  <script>
-    window.__DETAILS__ = {'sendcloud': {'title': 'Sendcloud — Account Executive (UK)', 'html': '\n<p><b>Focus:</b> UK SMB & Mid‑Market e‑commerce merchants. Full-cycle sales and expansion across shipping automation.</p>\n<ul class="list">\n  <li><b>Discovery:</b> map shipping operations, carrier setup, error points, and manual workload</li>\n  <li><b>Value story:</b> position automation to reduce admin, improve accuracy, and simplify carrier management</li>\n  <li><b>Sales process:</b> MEDDICC qualification, stakeholder alignment, and clean forecasting</li>\n  <li><b>Expansion:</b> drive adoption of additional modules and cross-border shipping capabilities</li>\n</ul>\n<div class="chips tags">\n  <span class="chip">UK territory</span>\n  <span class="chip">MEDDICC</span>\n  <span class="chip">Salesforce</span>\n  <span class="chip">E-commerce logistics</span>\n</div>\n'}, 'processmaker': {'title': 'ProcessMaker — Account Executive', 'html': '\n<p>Managed strategic pipeline for workflow automation software, partnering with SDRs and Sales Engineers through demo/POC stages.</p>\n<ul class="list">\n  <li>Prospected targeted accounts via cold call, email, and social</li>\n  <li>Qualified using MEDDICC; advanced opportunities through the full cycle</li>\n  <li>Tracked forecasting and pipeline hygiene in Salesforce</li>\n</ul>\n<div class="chips tags">\n  <span class="chip">Workflow automation</span>\n  <span class="chip">MEDDICC</span>\n  <span class="chip">Salesforce</span>\n</div>\n'}, 'sitelucent': {'title': 'SiteLucent — Account Executive', 'html': '\n<p>Owned pipeline from prospect to close, delivered demos and proposals, and managed renewals and expansion.</p>\n<ul class="list">\n  <li>Managed portfolio corresponding to <b>20%+ of ARR</b></li>\n  <li>Structured expansion plans to increase adoption and retention</li>\n  <li>Handled contract renewals and account planning</li>\n</ul>\n<div class="chips tags">\n  <span class="chip">Account management</span>\n  <span class="chip">Expansion</span>\n  <span class="chip">Renewals</span>\n</div>\n'}, 'containerx': {'title': 'Container xChange — Sales Development Representative', 'html': '\n<p>Generated and qualified outbound opportunities, maintained CRM integrity (PipeDrive), and collaborated closely with AEs.</p>\n<ul class="list">\n  <li>Outbound calls, emails, and lead follow-up</li>\n  <li>Pipeline management and data hygiene</li>\n</ul>\n<div class="chips tags">\n  <span class="chip">Outbound</span>\n  <span class="chip">PipeDrive</span>\n  <span class="chip">Lead qualification</span>\n</div>\n'}, 'testimonials': {'title': 'Testimonials (placeholder)', 'html': '\n<p>This is a test section. Later we’ll add 2–3 short quotes (with name, title, company), or LinkedIn recommendations.</p>\n<ul class="list">\n  <li>Keep each quote 1–2 sentences max</li>\n  <li>Highlight: communication, ownership, pipeline discipline, collaboration</li>\n</ul>\n'}};
-  </script>
   <script src="assets/app.js"></script>
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
