@@ -497,10 +497,15 @@ footer{
 .ext{opacity:.6;font-weight:900;margin-left:4px}
 
 
-/* --- Force Experience boxes to stack vertically --- */
-#experience .grid2{
-  grid-template-columns: 1fr !important;
+/* Force Experience section to stack vertically */
+#experience .grid2,
+#experience .grid,
+#experience .wrap > .grid2{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
 }
+
 #experience .glass{
-  width: 100%;
+  width: 100% !important;
 }
