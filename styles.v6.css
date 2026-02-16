@@ -1014,4 +1014,27 @@ footer{
   align-items: center;
   line-height: 1;
 }
+/* === Mobile fix: keep DETAILS fully visible inside the card === */
+@media (max-width: 720px){
+
+  /* give the header some breathing room on the right */
+  .exp-head{
+    position: relative !important;
+    padding-right: 84px !important; /* reserve space for DETAILS */
+  }
+
+  /* pin DETAILS safely inside the card */
+  .exp-cta{
+    position: absolute !important;
+    right: 16px !important;
+    top: 16px !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  /* optional: hide the + icon on mobile to reduce clutter (DETAILS is enough) */
+  .exp-icon{
+    display: none !important;
+  }
+}
 
