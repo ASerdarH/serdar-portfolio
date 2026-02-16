@@ -909,3 +909,34 @@ footer{
   color: rgba(244,247,255,.78);
   white-space:nowrap;
 }
+
+
+/* === Timeline width + CTA hint (implemented) === */
+.timeline{
+  width: 100% !important;
+  max-width: 480px;
+}
+
+/* Subtle CTA label next to + icon */
+.exp-cta{
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  margin-right: 8px;
+}
+.exp-head:hover .exp-cta{
+  color: rgba(255,255,255,.85);
+}
+
+/* On mobile, keep CTA but slightly smaller */
+@media (max-width: 720px){
+  .exp-cta{
+    font-size: 10px;
+    margin-right: 6px;
+  }
+  .timeline{
+    max-width: 100%;
+  }
+}
