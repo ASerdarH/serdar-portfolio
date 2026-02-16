@@ -978,3 +978,19 @@ footer{
   .exp-location{font-size:12.5px}
   .site-pill{font-size:11.5px; padding:7px 9px}
 }
+/* MOBILE FIX – Move DETAILS left */
+@media (max-width: 768px) {
+  .exp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .exp-header .exp-link {
+    margin-left: auto;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
