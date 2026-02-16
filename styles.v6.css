@@ -940,3 +940,41 @@ footer{
     max-width: 100%;
   }
 }
+
+
+/* === Experience: location + website CTA === */
+.exp-location{
+  font-size: 13px;
+  font-weight: 750;
+  color: rgba(244,247,255,.68);
+  margin-top: 6px;
+}
+
+.site-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(244,247,255,.88);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.02em;
+  text-decoration:none;
+  width: fit-content;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.site-pill:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.22);
+  opacity: .98;
+}
+
+@media (max-width: 720px){
+  .exp-location{font-size:12.5px}
+  .site-pill{font-size:11.5px; padding:7px 9px}
+}
