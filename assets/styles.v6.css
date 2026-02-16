@@ -750,3 +750,106 @@ footer{
   .timeline{padding:9px 10px}
   .timeline-line{font-size:12.5px}
 }
+
+
+/* === Experience visual enhancement v4 === */
+
+/* Slightly bigger logos */
+.exp-logo{
+  width:42px !important;
+  height:42px !important;
+  border-radius:14px !important;
+  padding:6px !important;
+}
+
+/* Make company names bigger & cooler */
+.company-link{
+  font-size:20px !important;
+  font-weight:950 !important;
+  letter-spacing:-0.4px !important;
+  background: linear-gradient(90deg, #ffffff, #cfd8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fill the glass boxes better */
+.exp-item{
+  padding: 6px 0 !important;
+}
+
+.exp-head{
+  padding:22px 22px !important;
+}
+
+.exp-inner{
+  padding:20px 22px 24px !important;
+}
+
+/* Timeline title stronger */
+.timeline-title{
+  font-size:12px !important;
+  letter-spacing:.12em !important;
+  color: rgba(244,247,255,.85) !important;
+}
+
+.timeline-line{
+  font-size:14px !important;
+}
+
+/* Slightly more depth for experience cards */
+.exp-item.glass{
+  box-shadow: 0 20px 60px rgba(0,0,0,.35) !important;
+}
+
+@media (max-width: 720px){
+  .company-link{
+    font-size:18px !important;
+  }
+  .exp-logo{
+    width:38px !important;
+    height:38px !important;
+  }
+}
+
+
+
+/* === Final touches v5 === */
+
+/* 1) Company names even bolder */
+.company-link{
+  font-weight: 1000 !important;
+  letter-spacing: -0.55px !important;
+}
+
+/* 2) Subtle hover glow for company titles */
+.company-link{
+  position: relative;
+  transition: opacity .25s ease, filter .25s ease;
+}
+.company-link:hover{
+  opacity: .95;
+  filter: drop-shadow(0 10px 22px rgba(170,185,255,.22)) drop-shadow(0 18px 34px rgba(120,140,255,.12));
+}
+
+/* 3) Smoother dropdown open animation */
+.exp-panel{
+  transition: max-height .55s cubic-bezier(.2,.8,.2,1) !important;
+}
+.exp-inner{
+  transform: translateY(-6px);
+  opacity: 0;
+  transition: transform .45s cubic-bezier(.2,.8,.2,1), opacity .45s ease;
+}
+.exp-item.open .exp-inner{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Small polish on the +/- icon */
+.exp-icon{
+  transition: transform .25s ease, opacity .25s ease;
+}
+.exp-item.open .exp-icon{
+  transform: rotate(180deg);
+  opacity: 1;
+}
