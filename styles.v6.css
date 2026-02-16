@@ -1037,4 +1037,33 @@ footer{
     display: none !important;
   }
 }
+/* === iPhone Safari: keep DETAILS visible inside experience cards === */
+@media (max-width: 720px){
+
+  /* Allow header content to be visible (prevents right-side clipping) */
+  .exp-item{
+    overflow: visible !important;
+  }
+
+  /* Reserve space so the title never pushes into the CTA area */
+  .exp-head{
+    position: relative !important;
+    padding-right: 96px !important;
+  }
+
+  /* Place DETAILS safely inside the card */
+  .exp-cta{
+    position: absolute !important;
+    right: 14px !important;
+    top: 18px !important;
+    z-index: 5 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+  }
+
+  /* Optional: hide the + icon on mobile so it doesn't compete */
+  .exp-icon{
+    display: none !important;
+  }
+}
 
