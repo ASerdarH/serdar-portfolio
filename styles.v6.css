@@ -993,4 +993,25 @@ footer{
     letter-spacing: 1px;
   }
 }
+/* === Fix: align DETAILS consistently (mobile + desktop) === */
+.exp-head{
+  align-items: center !important;
+}
+
+.exp-left{
+  align-items: center !important;
+}
+
+.exp-cta,
+.exp-icon{
+  align-self: center !important;
+  margin-top: 0 !important;
+}
+
+/* optional: make DETAILS feel more stable vertically */
+.exp-cta{
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
 
